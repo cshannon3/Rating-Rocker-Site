@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Rating Rocker</title>
+            <meta charset="utf=8">
+            <script src="scripts/jquery-3.2.1.min.js" type="text/javascript"></script>
+            <script src="scripts/spotify-web-api.js" type="text/javascript"></script>
+            <script src="scripts/jscolor.min.js" type="text/javascript"></script>
+            <script src="scripts/popup.js" type="text/javascript"></script>
+            
+             <script src="scripts/require.js"></script>
+        
+             
+            <link rel="stylesheet" type="text/css" href="styles/slider.css">
+            <h1 class="header"><img src="images/rockermusic128.png" Alt="Rating Rocker" style="float:left">Rating Rocker</h1>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+                    
+                   .radial-gradient {
+                    background-image: radial-gradient(rgb(2, 0, 8) 0%, rgb(20, 7, 150) 90%);
+                        }
+                        .column {
+                        float: left;
+                            }
+
+                    /* Left and right column */
+                    .column.side {
+                     width: 25%;
+                     border: 5px solid rgb(49, 19, 216);
+                     background: rgb(12, 12, 10);
+                        }
+
+                        /* Middle column */
+                .column.middle {
+                 width: 75%;
+                 border: 5px solid rgb(194, 9, 9);
+                     background: rgb(12, 12, 11);
+                }
+                  .fff {
+                    width: 280px;
+                    padding: 10px;
+                    border: 5px solid gray;
+                    background: beige;
+                    margin: 0;
+                        }
+                   .header {
+                    background-color: #F1F1F1;
+                    text-align: center;
+                    
+                }
+                /* Clear floats after the columns */
+                .row:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+                @media (max-width: 600px) {
+                    .column.side, .column.middle {
+                        width: 100%;
+                           }
+                 
+           </style>
+            
+    </head>
+    <body class="radial-gradient">
+    <p id="song">Song</p>
+    <div><img src="images/rockermusic248.png" Alt="Rating Rocker"></div>
+   <div class="row"> 
+       <div class="column side">
+            <div class="fff">
+        <p> Party Vibe:     Value:<span id="partyval"></span><div id="slidecontainer1">
+            <input type="range" min="1" max="100" value="0"  class="slider" id="slider1">
+        </div></p>
+        <p>Chill Vibe:     Value:<span id="chillval"></span><div id="slidecontainer2">
+            <input type="range" min="1" max="100" value="0" class="slider" id="slider2">
+        </div></p>
+       <p> Study Vibe:     Value:<span id="studyval"></span> <div id="slidecontainer3">
+            <input type="range" min="1" max="100" value="0" class="slider" id="slider3">
+        </div></p>
+        <p> Freshness:      Value:<span id="freshval"></span><div id="slidecontainer3">
+                <input type="range" min="1" max="100" value="0" class="slider" id="slider4">
+            </div></p>
+    </div>
+    <div><h5><span>Rap: <input type="checkbox" id="genre1" value="Rap" >Alt: <input type="checkbox" id="genre2" value="Alt" >EDM: <input type="checkbox" id="genre3" value="EDM" ></span></h5></div>
+    <input type="submit" id="savesongval" value="Save"><span><input type=submit id="load" value="Load Current Rating"></span>
+     
+      <div class="fff">  <input type="submit" id="topsongs" value="Top Songs">
+        <ul id="tsongs">
+
+            
+        </ul>
+    </div>
+    </div>
+    <div class="column middle">jajajajajaja</div>
+   </div>
+
+    </body>
+</html>
+
+                   
