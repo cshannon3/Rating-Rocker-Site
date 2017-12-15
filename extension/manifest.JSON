@@ -1,0 +1,35 @@
+{
+    "name": "Rating Rocker Extension",
+    "description": "Advanced Rating System that allowsfor customizable rating slider categories and smart playlists",
+    "version": "0.0.0.1",
+    "manifest_version": 2,
+    "icons": {
+      "128": "rockermusic128.png",
+      "48": "rockermusic48.png",
+      "16": "rockermusic248.png"
+    
+    },
+    "browser_action":{
+        "default_icon": "rockermusic248.png",
+        "default_popup": "popup.html",
+        "default_title" : "RatingRocker"
+    },
+   
+ "content_scripts":[
+    {
+      "matches": ["https://open.spotify.com/*"],
+      "js": ["content.js", "jquery-3.2.1.min.js"]
+     
+    }
+  ],
+ 
+    "permissions":[
+        "tabs",
+        "storage",
+        "https://open.spotify.com/*",
+        "<all_urls>"
+
+    ]
+}
+   
+  

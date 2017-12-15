@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title >Rating Rocker</title>
+            <script src="jquery-3.2.1.min.js"></script>
+            <script src="jscolor.min.js"></script>
+            <script src="popup.js"></script>
+            <link rel="stylesheet" href="slider.css">
+            <h3>Rating Rocker</h3>
+            <style>
+                    body{
+                    min-width: 300px;
+                    min-height: 150px;
+                    }
+                    
+                    
+                </style>
+            
+    </head>
+    <body>
+    <div>
+        <p> Party Vibe:     Value:<span id="partyval"></span><div id="slidecontainer1">
+            <input type="range" min="1" max="100" value="0"  class="slider" id="slider1">
+        </div></p>
+        <p>Chill Vibe:     Value:<span id="chillval"></span><div id="slidecontainer2">
+            <input type="range" min="1" max="100" value="0" class="slider" id="slider2">
+        </div></p>
+       <p> Study Vibe:     Value:<span id="studyval"></span> <div id="slidecontainer3">
+            <input type="range" min="1" max="100" value="0" class="slider" id="slider3">
+        </div></p>
+        <p> Freshness:      Value:<span id="freshval"></span><div id="slidecontainer3">
+                <input type="range" min="1" max="100" value="0" class="slider" id="slider4">
+            </div></p>
+    </div>
+    <div><h5><span>Rap: <input type="checkbox" id="genre1" value="Rap" >Alt: <input type="checkbox" id="genre2" value="Alt" >EDM: <input type="checkbox" id="genre3" value="EDM" ></span></h5></div>
+    <input type="submit" id="savesongval" value="Save"><span><input type=submit id="load" value="Load Current Rating"></span>
+    <input type="submit" id="getlist" value="Change"/>
+</body>
+</html>
